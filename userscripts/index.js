@@ -11,7 +11,7 @@
 // ==/UserScript==
 
 (async () => {
-    const URL = 'https://raw.githubusercontent.com/nyatanyahu/FlorrioLangPack/aa48c2f87b2c856713e787fedecc44fb58297391/wasm/langpack.patch';
+    const URL = 'https://raw.githubusercontent.com/nyatanyahu/FlorrioLangPack/main/wasm/langpack.patch';
     const diffBuffer = await fetch(URL).then(res => res.arrayBuffer());
     const wasm = unsafeWindow.WebAssembly;
     const _instantiate = wasm.instantiate;
